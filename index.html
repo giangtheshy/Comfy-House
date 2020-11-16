@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/776bbe23d6.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfy House</title>
+</head>
+
+<body>
+
+    <nav class="nav-center">
+        <button class="bar-icon"><i class="fas fa-bars"></i></button>
+        <img src="./images/logo.svg" alt="logo">
+        <div class="cart-btn">
+            <span class="cart-icon"><i class="fas fa-cart-plus"></i></span>
+            <div class="cart-items">0</div>
+        </div>
+        <div class="side-bar">
+            <span class="close-sidebar-btn"><i class="far fa-window-close"></i></span>
+            <div class="search-center">
+                <form action="" class="search-form">
+                    <input type="text" name="search-box" id="search-box" placeholder="Search...">
+
+                </form>
+            </div>
+            <div class="filter-categories-center">
+                <h2 >Categories:</h2>
+                <button class="category-btn">All</button>
+                <button class="category-btn">Chair</button>
+                <button class="category-btn">Sofa</button>
+                <button class="category-btn">Table</button>
+            </div>
+            <div class="filter-price-center">
+                <h2>Price:</h2>
+                <input type="range" name="range-price" length="100" min="0" max="111" value="80" id="range-price">
+                <p class="value-price-range">$20</p>
+            </div>
+            <button class="btn-orange" id="shopping">Shopping</button>
+        </div>
+
+
+    </nav>
+
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">FURNITURE COLLECTION</h1>
+            <a href="#our-product" class="show-now"><button class="btn-orange">Show Now</button></a>
+        </div>
+    </header>
+    <section class="products-section" id="our-product">
+        <div class="products-header">
+            <h1>Our Products</h1>
+        </div>
+        <div class="products-container">
+            <!-- Product List -->
+        </div>
+    </section>
+    <div class="cart-overlay">
+        <div class="cart-container">
+            <div class="cart-header">
+                <span class="close-cart-btn"><i class="far fa-window-close"></i></span>
+                <h2 class="cart-title">
+                    Your Cart
+                </h2>
+            </div>
+            <div class="cart-products">
+                <!-- Cart List -->
+            </div>
+            <div class="cart-footer">
+                <h3 class="cart-bill">Your Total : $ <span class="cart-total">149.99</span></h3>
+                <button class="clear-cart btn-orange">clear cart</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="./src/app.js"></script>
+</body>
+
+</html>
