@@ -310,7 +310,9 @@ class UI {
     showSideBar() {
         
         sideBar.classList.add("show-side-bar");
-        productsSection.style.marginLeft = "20%";
+        let styleSideBar = window.getComputedStyle(sideBar);
+        let widthSideBar = styleSideBar.getPropertyValue("width");
+        productsSection.style.marginLeft = widthSideBar;
         let position = productsSection.offsetTop;
         window.scrollTo({
             Left : 0,
